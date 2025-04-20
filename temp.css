@@ -1,0 +1,139 @@
+/* General styles */
+body {
+    background-color: #121212; /* Dark background for better contrast */
+    color: white; /* Default text color */
+}
+
+/* NavBar styles */
+.navbar {
+    background-color: #252525; /* Navbar background color */
+}
+
+.navbar-brand {
+    margin-left: 50px; /* Left margin for the brand */
+}
+
+.nav-link {
+    border-radius: 10%; /* Rounded corners for nav links */
+}
+
+/* Button styles */
+a.nav-link.p-3.fw-bold {
+    background-color: #d4b160; /* Custom button color */
+    color: black !important; /* Button text color */
+}
+
+/* Title styles */
+h1.title {
+    color: #02ff0291; /* Title color */
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 0.5rem; /* Bottom margin for spacing */
+}
+
+/* Subtitle styles */
+h2.subtitle {
+    color: white; /* Subtitle color */
+    font-size: 1.5rem; /* Subtitle font size */
+}
+
+/* Section header styles */
+h2 {
+    color: #02ff0291; /* Section header color */
+    font-size: 2rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 1.5rem 0; /* Margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    padding-bottom: 0.5rem; /* Padding at the bottom */
+}
+
+h3 {
+    color: #02ff0291; /* Section header color */
+    font-size: 1.75rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 1.25rem 0; /* Margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+h4 {
+    color: #02ff0291; /* Section header color */
+    font-size: 1.5rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 1rem 0; /* Margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+h5 {
+    color: #02ff0291; /* Section header color */
+    font-size: 1.25rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 0.75rem 0; /* Margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+h6 {
+    color: #02ff0291; /* Section header color */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin: 0.5rem 0; /* Margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+}
+
+
+/* Normal text styles */
+p.normal-text {
+    color: white; /* Normal text color */
+}
+
+/* Image styles */
+img.img-fluid {
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Shadow effect for images */
+}
+
+/* Preformatted code styles */
+pre {
+    background-color: black; /* Background for code blocks */
+    color: #fff; /* Text color for code */
+    padding: 10px; /* Padding inside code blocks */
+    border-radius: 5px; /* Rounded corners for code blocks */
+}
+
+/* Links in lists */
+ul li a {
+    color: #02ff0291; /* Link color */
+}
+
+/* Specific styles for active links */
+.nav-link.active {
+    background-color: white; /* Active link background */
+    color: black !important; /* Active link text color */
+}
+
+/* Custom classes for specific elements */
+.nav-item.dropdown .dropdown-menu {
+    color: white; /* Dropdown text color */
+    background-color: black; /* Dropdown background color */
+}
+
+.dropdown-item {
+    color: white; /* Dropdown item text color */
+}
+
+/* Container styles */
+.unique-cv-section {
+    width: 100%; /* Full width */
+    max-width: 1000px; /* Max width */
+    margin: 0 auto; /* Centering */
+    padding: 2rem; /* Padding */
+    background-color: #252525; /* Section background color */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Shadow for the section */
+}
+
+.header {
+    border-bottom: 1px solid #02ff0291; /* Border for header */
+    padding-bottom: 1rem; /* Padding at the bottom of the header */
+    margin-bottom: 1rem; /* Margin for spacing */
+    margin-top: 1rem; /* Margin for spacing */
+
+}

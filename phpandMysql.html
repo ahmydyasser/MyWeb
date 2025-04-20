@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <meta name="description" content="Ahmyd Yasser - Bug Hunter, Pentester, CTF Player">
+    <meta name="keywords" content="Bug Hunter, Pentester, CTF, Cybersecurity, Writeups, Notes">
+    <meta name="author" content="Ahmyd Yasser">
+    <title >Ahmyd Yasser | Template for Writeups</title>
+    <link rel="stylesheet" href="writeupsCss.css">
+    <link rel="stylesheet" href="temp.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/transparent-skull-png-25.png"  type="image/png"/>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Prism.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #252525;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" style="margin-left: 50px;" href="/index.html">o----(:::::Ahmydyasser:::::>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="margin-right: 30px;" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" style="font-size: large;">
+                        <a class="nav-link p-3 fw-bold" style="   
+                         background-color: #d4b160;  border-radius: 10%; color: black !important;"
+                            href="/writeups.html">Writeups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 fw-bold" style="  border-radius: 10%; 
+                        background-color: white; color: black !important;" href="#">SecretPlace</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link p-3 fw-bold" style="  border-radius: 10%; 
+                        background-color: white; color: black !important;" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" style="color: white; background-color: black;">
+                            <li><a class="dropdown-item" style="color: white;" href="#">Action</a></li>
+                            <li><a class="dropdown-item" style="color: white;" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="color: white;" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 fw-bold" style=" border-radius: 10%;  
+                        background-color: white; color: black !important;" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 fw-bold active" style="   border-radius: 10%;
+                        background-color: white; color: black !important;" aria-current="page"
+                            href="/index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container mt-5 px-4 text-center">
+        <div class="unique-cv-section mx-auto" style="
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #252525;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        ">
+            <div class="header" style="
+                border-bottom: 1px solid #02ff0291;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            ">
+                <h1 class="title fw-bolder" style="
+                    color: #02ff0291;
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                ">PHP and MySQL</h1>
+                <h2 class="subtitle" style="
+                    color: white;
+                    font-size: 1.5rem;
+                ">( Explaining Some PHP & MySQL )</h2>
+            </div>
+            <div class="content text-start">
+
+
+
+                <!-- input place here  -->
+
+
+                <h2>PHP Notes</h2>
+
+                <h3 id="php-overview">PHP Overview</h3>
+                <ul>
+                    <li><strong>PHP (Hypertext Preprocessor):</strong> A widely-used open-source scripting language, particularly suited for web development.</li>
+                    <li><strong>Server-Side:</strong> PHP code is executed on the server, and the result is sent to the client as plain HTML.</li>
+                    <li><strong>Syntax:</strong> PHP syntax is similar to C, Java, and Perl, making it easy to learn for people with basic programming skills.</li>
+                </ul>
+                
+                <h3 id="variables">Variables</h3>
+                <ul>
+                    <li><strong>Declaring Variables:</strong> Variables in PHP start with a <code>$</code> sign, followed by the name of the variable.</li>
+                    <li><strong>Case Sensitivity:</strong> Variable names in PHP are case-sensitive.</li>
+                    <li><strong>Data Types:</strong> PHP automatically converts the variable to the correct data type, depending on its value.</li>
+                    <li><strong>Example:</strong> 
+                        <pre><code>$var1 = "Hello, World!";
+                $var2 = 42;
+                $var3 = 3.14;</code></pre>
+                    </li>
+                </ul>
+                
+                <h3 id="control-structures">Control Structures</h3>
+                <ul>
+                    <li><strong>If-Else Statements:</strong> 
+                        <pre><code>if (condition) {
+                    // code to be executed if condition is true
+                } else {
+                    // code to be executed if condition is false
+                }</code></pre>
+                    </li>
+                    <li><strong>Loops:</strong> PHP supports several types of loops such as <code>for</code>, <code>foreach</code>, <code>while</code>, and <code>do-while</code>.
+                        <pre><code>for ($i = 0; $i < 10; $i++) {
+                    echo $i;
+                }</code></pre>
+                    </li>
+                </ul>
+                
+                <h3 id="functions">Functions</h3>
+                <ul>
+                    <li><strong>Defining Functions:</strong> 
+                        <pre><code>function functionName() {
+                    // code to be executed
+                }</code></pre>
+                    </li>
+                    <li><strong>Returning Values:</strong> Functions can return a value using the <code>return</code> statement.
+                        <pre><code>function add($a, $b) {
+                    return $a + $b;
+                }</code></pre>
+                    </li>
+                    <li><strong>Parameters:</strong> Functions can accept parameters which are specified in the parentheses.
+                        <pre><code>function greet($name) {
+                    echo "Hello, " . $name;
+                }</code></pre>
+                    </li>
+                </ul>
+                
+                <h3 id="superglobals">Superglobals</h3>
+                <ul>
+                    <li><strong>$_GET:</strong> Used to collect form data after submitting an HTML form with method="get". It also collects data sent in the URL.
+                        <pre><code>// URL: example.com/index.php?name=John
+                $name = $_GET['name'];</code></pre>
+                    </li>
+                    <li><strong>$_POST:</strong> Used to collect form data after submitting an HTML form with method="post".
+                        <pre><code>$name = $_POST['name'];</code></pre>
+                    </li>
+                    <li><strong>$_SESSION:</strong> Used to store and retrieve session variables.
+                        <pre><code>session_start();
+                $_SESSION["user"] = "John";</code></pre>
+                    </li>
+                </ul>
+                
+                <h2>MySQL Notes</h2>
+                
+                <h3 id="mysql-overview">MySQL Overview</h3>
+                <ul>
+                    <li><strong>MySQL:</strong> An open-source relational database management system (RDBMS) based on SQL (Structured Query Language).</li>
+                    <li><strong>Client-Server Architecture:</strong> MySQL follows a client-server architecture, where the server manages databases and the client requests services.</li>
+                    <li><strong>Data Storage:</strong> MySQL stores data in tables, which are organized into databases.</li>
+                </ul>
+                
+                <h3 id="database-operations">Database Operations</h3>
+                <ul>
+                    <li><strong>Creating a Database:</strong> 
+                        <pre><code>CREATE DATABASE mydatabase;</code></pre>
+                    </li>
+                    <li><strong>Selecting a Database:</strong> 
+                        <pre><code>USE mydatabase;</code></pre>
+                    </li>
+                    <li><strong>Dropping a Database:</strong> 
+                        <pre><code>DROP DATABASE mydatabase;</code></pre>
+                    </li>
+                </ul>
+                
+                <h3 id="table-operations">Table Operations</h3>
+                <ul>
+                    <li><strong>Creating a Table:</strong> 
+                        <pre><code>CREATE TABLE users (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    username VARCHAR(50) NOT NULL,
+                    email VARCHAR(100)
+                );</code></pre>
+                    </li>
+                    <li><strong>Inserting Data:</strong> 
+                        <pre><code>INSERT INTO users (username, email) 
+                VALUES ('john_doe', 'john@example.com');</code></pre>
+                    </li>
+                    <li><strong>Updating Data:</strong> 
+                        <pre><code>UPDATE users 
+                SET email = 'john_new@example.com' 
+                WHERE username = 'john_doe';</code></pre>
+                    </li>
+                    <li><strong>Deleting Data:</strong> 
+                        <pre><code>DELETE FROM users 
+                WHERE username = 'john_doe';</code></pre>
+                    </li>
+                </ul>
+                
+                <h3 id="queries">Queries</h3>
+                <ul>
+                    <li><strong>SELECT Query:</strong> Used to select data from a database.
+                        <pre><code>SELECT * FROM users;</code></pre>
+                    </li>
+                    <li><strong>WHERE Clause:</strong> Used to filter records.
+                        <pre><code>SELECT * FROM users 
+                WHERE email = 'john@example.com';</code></pre>
+                    </li>
+                    <li><strong>JOIN Query:</strong> Used to combine rows from two or more tables.
+                        <pre><code>SELECT users.username, orders.order_id 
+                FROM users 
+                JOIN orders ON users.id = orders.user_id;</code></pre>
+                    </li>
+                </ul>
+                
+                <h3 id="security-considerations">Security Considerations</h3>
+                <ul>
+                    <li><strong>SQL Injection:</strong> Always validate and sanitize user input to prevent SQL injection attacks.
+                        <pre><code>// Example of a vulnerable query:
+                $unsafe_variable = $_GET["user_id"];
+                $query = "SELECT * FROM users WHERE id = " . $unsafe_variable;</code></pre>
+                    </li>
+                    <li><strong>Password Hashing:</strong> Never store passwords as plain text. Use secure hashing algorithms like bcrypt.
+                        <pre><code>$hashed_password = password_hash($password, PASSWORD_BCRYPT);</code></pre>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

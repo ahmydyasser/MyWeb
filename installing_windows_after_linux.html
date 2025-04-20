@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <meta name="description" content="Ahmyd Yasser - Bug Hunter, Pentester, CTF Player">
+    <meta name="keywords" content="Bug Hunter, Pentester, CTF, Cybersecurity, Writeups, Notes">
+    <meta name="author" content="Ahmyd Yasser">
+    <title >Ahmyd Yasser | Template for Writeups</title>
+    <link rel="stylesheet" href="writeupsCss.css">
+    <link rel="stylesheet" href="temp.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/transparent-skull-png-25.png"  type="image/png"/>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Prism.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #252525;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" style="margin-left: 50px;" href="/index.html">o----(:::::Ahmydyasser:::::>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="margin-right: 30px;" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" style="font-size: large;">
+                        <a class="nav-link p-3 fw-bold" style="   
+                         background-color: #d4b160;  border-radius: 10%; color: black !important;"
+                            href="/writeups.html">Writeups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 fw-bold" style="  border-radius: 10%; 
+                        background-color: white; color: black !important;" href="#">SecretPlace</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link p-3 fw-bold" style="  border-radius: 10%; 
+                        background-color: white; color: black !important;" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" style="color: white; background-color: black;">
+                            <li><a class="dropdown-item" style="color: white;" href="#">Action</a></li>
+                            <li><a class="dropdown-item" style="color: white;" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" style="color: white;" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 fw-bold" style=" border-radius: 10%;  
+                        background-color: white; color: black !important;" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3 fw-bold active" style="   border-radius: 10%;
+                        background-color: white; color: black !important;" aria-current="page"
+                            href="/index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container mt-5 px-4 text-center">
+        <div class="unique-cv-section mx-auto" style="
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #252525;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        ">
+            <div class="header" style="
+                border-bottom: 1px solid #02ff0291;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            ">
+                <h1 class="title fw-bolder" style="
+                    color: #02ff0291;
+                    font-size: 2.5rem;
+                    margin-bottom: 0.5rem;
+                ">Install Windows beside linux</h1>
+                <h2 class="subtitle" style="
+                    color: white;
+                    font-size: 1.5rem;
+                ">( Fixing the "No Device Drivers Were Found" )</h2>
+            </div>
+            <div class="content text-start">
+
+
+
+                <!-- input place here  -->
+
+
+                <p>It sounds like you want to install Windows on your second disk (<code>/dev/nvme0n1</code>), which currently has Arch Linux on it, and you&#39;re running into the “No Device Drivers Were Found” error during installation. Let’s walk through the steps to prepare that disk for Windows and address the driver issue.</p>
+                <h3 id="steps-to-prepare-dev-nvme0n1-for-windows-installation-btw-dev-nvmme1n1-is-kali-don-t-touch-it-">Steps to Prepare <code>/dev/nvme0n1</code> for Windows Installation , BTW  <code>/dev/nvmme1n1</code> is Kali &quot;don&#39;t touch it&quot;</h3>
+                <h4 id="1-backup-any-important-data-">1. <strong>Backup Any Important Data</strong></h4>
+                <p>If there’s any data on the <code>/dev/nvme0n1</code> disk that you want to keep, make sure to back it up before proceeding, as these steps will erase all existing data on that disk.</p>
+                <h4 id="2-delete-existing-partitions-">2. <strong>Delete Existing Partitions</strong></h4>
+                <p>You’ll need to delete the existing partitions on <code>/dev/nvme0n1</code> to make it available for Windows. You can do this using <code>fdisk</code> or <code>parted</code>. Here, I’ll guide you using <code>fdisk</code>:</p>
+                <ol>
+                <li><p><strong>Open Terminal and Start <code>fdisk</code>:</strong></p>
+                <pre><code class="lang-bash">sudo fdisk /dev/<span class="hljs-symbol">nvme0</span><span class="hljs-symbol">n1</span>
+                </code></pre>
+                </li>
+                <li><p><strong>List Partitions:</strong></p>
+                <ul>
+                <li>Press <code>p</code> to print the current partitions. This will show you what’s on the disk.</li>
+                </ul>
+                </li>
+                <li><p><strong>Delete Existing Partitions:</strong></p>
+                <ul>
+                <li>Press <code>d</code> and then enter the partition number (e.g., if there’s one partition, just press <code>d</code> and hit Enter). Repeat this until all partitions are deleted.</li>
+                </ul>
+                </li>
+                <li><p><strong>Write Changes:</strong></p>
+                <ul>
+                <li>Press <code>w</code> to write the changes and exit <code>fdisk</code>.</li>
+                </ul>
+                </li>
+                </ol>
+                <h4 id="3-format-the-disk-optional-">3. <strong>Format the Disk (Optional)</strong></h4>
+                <p>You can skip this step since Windows will handle formatting, but if you want to do it manually, you can create a new NTFS partition using <code>parted</code>:</p>
+                <ol>
+                <li><p><strong>Start <code>parted</code>:</strong></p>
+                <pre><code class="lang-bash">sudo parted /dev/<span class="hljs-symbol">nvme0</span><span class="hljs-symbol">n1</span>
+                </code></pre>
+                </li>
+                <li><p><strong>Create a New Partition Table:</strong></p>
+                <pre><code class="lang-bash">(<span class="hljs-name">parted</span>) mklabel gpt
+                </code></pre>
+                </li>
+                <li><p><strong>Create a New Partition:</strong></p>
+                <pre><code class="lang-bash">(parted) mkpart primary ntfs <span class="hljs-number">0</span>% <span class="hljs-number">100</span>%
+                </code></pre>
+                </li>
+                <li><p><strong>Exit <code>parted</code>:</strong></p>
+                <pre><code class="lang-bash">(<span class="hljs-name">parted</span>) quit
+                </code></pre>
+                </li>
+                </ol>
+                <h3 id="4-install-windows-">4. <strong>Install Windows</strong></h3>
+                <p>Now that you’ve prepared the disk, follow these steps to install Windows:</p>
+                <ol>
+                <li><p><strong>Use a Bootable Windows USB:</strong>
+                Make sure your USB drive is bootable with Windows 11. If you created it on macOS, it should be set up correctly. If not, consider recreating it using a Windows PC with the Media Creation Tool, as mentioned earlier.</p>
+                </li>
+                <li><p><strong>Boot from USB:</strong></p>
+                <ul>
+                <li>Restart your computer and access the boot menu (usually by pressing <code>F9</code> or <code>Esc</code> during startup).</li>
+                <li>Select the USB drive to boot from.</li>
+                </ul>
+                </li>
+                <li><p><strong>Start the Installation:</strong></p>
+                <ul>
+                <li>When you reach the installation screen, choose <strong>Custom Install</strong>.</li>
+                </ul>
+                </li>
+                <li><p><strong>Select the Disk:</strong></p>
+                <ul>
+                <li>You should see the unallocated space on <code>/dev/nvme0n1</code>. Select that space for installation.</li>
+                <li>If you formatted the disk as NTFS in the previous step, it should show up as a partition; otherwise, you may see unallocated space.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="5-address-driver-issues-">5. <strong>Address Driver Issues</strong></h3>
+                <p>If you still encounter the “No Device Drivers Were Found” error:</p>
+                <ol>
+                <li><p><strong>Ensure UEFI Mode:</strong></p>
+                <ul>
+                <li>Make sure you’re booting the USB in UEFI mode (not Legacy). Check your BIOS settings.</li>
+                </ul>
+                </li>
+                <li><p><strong>Disable Secure Boot:</strong></p>
+                <ul>
+                <li>Temporarily disable Secure Boot in BIOS.</li>
+                </ul>
+                </li>
+                <li><p><strong>Check USB Drive:</strong></p>
+                <ul>
+                <li>Sometimes, the USB drive itself may have issues. Try using a different USB drive or port.</li>
+                </ul>
+                </li>
+                <li><p><strong>Load Drivers Manually (if necessary):</strong></p>
+                <ul>
+                <li>If you have access to a driver package, you can load drivers from another USB drive during installation if prompted.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="conclusion">Conclusion</h3>
+                <p>After completing these steps, Windows should install without the driver issues. Let me know if you encounter any problems along the way!</p>
+                <hr>
+                <p>It looks like you’ve successfully accessed the <code>fdisk</code> utility for <code>/dev/nvme0n1</code>. Since it’s currently using a DOS partition table and you want to remove the existing partitions, here are the steps to delete the partitions and create a new one for Windows:</p>
+                <h3 id="steps-to-delete-existing-partitions">Steps to Delete Existing Partitions</h3>
+                <ol>
+                <li><p><strong>List Existing Partitions:</strong></p>
+                <ul>
+                <li>Since the <code>p</code> command didn&#39;t show any partitions, it’s possible that there are no visible partitions or they are not being displayed correctly. In this case, proceed with the next steps to delete any partitions you might be aware of.</li>
+                </ul>
+                </li>
+                <li><p><strong>Delete Existing Partitions:</strong></p>
+                <ul>
+                <li>To delete a partition, use the <code>d</code> command. If you’re not sure how many partitions are present, you can try issuing the <code>d</code> command directly. It will prompt you to specify the partition number.</li>
+                <li>If there are no partitions, you can skip to creating a new partition.</li>
+                </ul>
+                </li>
+                <li><p><strong>Create a New Partition Table (Optional)</strong></p>
+                <ul>
+                <li>Since you want to install Windows, it’s a good idea to create a new partition table.</li>
+                <li>Type the following command to create a new partition table:<pre><code>Command (m <span class="hljs-keyword">for</span> <span class="hljs-built_in">help</span>): o
+                </code></pre></li>
+                <li>This will create a new empty DOS partition table.</li>
+                </ul>
+                </li>
+                <li><p><strong>Create a New Partition:</strong></p>
+                <ul>
+                <li>Now, create a new partition by typing:<pre><code>Command (m <span class="hljs-keyword">for</span> <span class="hljs-built_in">help</span>): n
+                </code></pre></li>
+                <li>You’ll be prompted to choose the partition number (just hit Enter for default), and then specify the first and last sectors (you can just hit Enter to use the default values to use the entire disk).</li>
+                </ul>
+                </li>
+                <li><p><strong>Change the Partition Type:</strong></p>
+                <ul>
+                <li>If you want to set the partition type to NTFS (which Windows requires), you can type:<pre><code>Command (m <span class="hljs-keyword">for</span> <span class="hljs-built_in">help</span>): t
+                </code></pre></li>
+                <li>Enter the partition number you just created, and then type <code>7</code> to set the partition type to NTFS.</li>
+                </ul>
+                </li>
+                <li><p><strong>Write Changes to Disk:</strong></p>
+                <ul>
+                <li>Finally, write the changes to the disk by typing:<pre><code>Command (<span class="hljs-keyword">m</span> <span class="hljs-keyword">for</span> <span class="hljs-keyword">help</span>): <span class="hljs-built_in">w</span>
+                </code></pre></li>
+                <li>This will apply the changes you made. After this, the disk is ready for Windows installation.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="next-steps">Next Steps</h3>
+                <p>After preparing the partition:</p>
+                <ol>
+                <li><p><strong>Boot from the Windows Installation USB:</strong></p>
+                <ul>
+                <li>Restart your computer and boot from the USB drive as described earlier.</li>
+                </ul>
+                </li>
+                <li><p><strong>Select the Newly Created Partition:</strong></p>
+                <ul>
+                <li>During the Windows installation, select the partition you created for installation. Windows will format it to NTFS if it’s not already formatted.</li>
+                </ul>
+                </li>
+                <li><p><strong>Complete the Installation:</strong></p>
+                <ul>
+                <li>Follow the on-screen instructions to complete the Windows installation.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="troubleshooting-the-no-device-drivers-were-found-error">Troubleshooting the “No Device Drivers Were Found” Error</h3>
+                <p>If you encounter the error again:</p>
+                <ul>
+                <li>Ensure that the USB drive is correctly formatted and created.</li>
+                <li>Try using different USB ports, preferably USB 2.0 if available.</li>
+                <li>Check your BIOS settings for UEFI and Secure Boot options.</li>
+                </ul>
+                <p>Let me know if you need further assistance with any of these steps!</p>
+                <hr>
+                <p>It seems that there are no existing partitions on your <code>/dev/nvme0n1</code> disk, which is why the <code>d</code> command is returning that no partition is defined. This is likely why you&#39;re having issues with Windows installation as well.</p>
+                <p>Since there are no partitions to delete, let’s create a new partition directly. Here’s how you can proceed:</p>
+                <h3 id="steps-to-create-a-new-partition">Steps to Create a New Partition</h3>
+                <ol>
+                <li><p><strong>Create a New Partition:</strong></p>
+                <ul>
+                <li>Start by creating a new partition by typing:<pre><code><span class="hljs-attribute">n</span>
+                </code></pre></li>
+                <li>You&#39;ll be prompted to specify the partition number. Just hit <strong>Enter</strong> to accept the default (usually <code>1</code>).</li>
+                </ul>
+                </li>
+                <li><p><strong>Specify the First Sector:</strong></p>
+                <ul>
+                <li>Next, you’ll be prompted for the first sector. Just hit <strong>Enter</strong> to use the default, which should start from the beginning of the disk.</li>
+                </ul>
+                </li>
+                <li><p><strong>Specify the Last Sector:</strong></p>
+                <ul>
+                <li>When prompted for the last sector, just hit <strong>Enter</strong> again to allocate the entire disk space for the partition.</li>
+                </ul>
+                </li>
+                <li><p><strong>Set the Partition Type:</strong></p>
+                <ul>
+                <li>To set the partition type to NTFS, type:<pre><code><span class="hljs-attribute">t</span>
+                </code></pre></li>
+                <li>When prompted for the partition number, enter <code>1</code> (or the partition number you just created).</li>
+                <li>Then type <code>7</code> to set the partition type to NTFS.</li>
+                </ul>
+                </li>
+                <li><p><strong>Write Changes to the Disk:</strong></p>
+                <ul>
+                <li>Finally, write the changes to the disk by typing:<pre><code><span class="hljs-attribute">w</span>
+                </code></pre></li>
+                <li>This will create the new partition and apply the changes.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="check-your-changes">Check Your Changes</h3>
+                <p>After you&#39;ve completed these steps, you can verify that the partition has been created successfully:</p>
+                <ol>
+                <li><p><strong>Re-open <code>fdisk</code>:</strong></p>
+                <pre><code class="lang-bash">sudo fdisk /dev/<span class="hljs-symbol">nvme0</span><span class="hljs-symbol">n1</span>
+                </code></pre>
+                </li>
+                <li><p><strong>Print the Partition Table:</strong></p>
+                <ul>
+                <li>Type:<pre><code><span class="hljs-attribute">p</span>
+                </code></pre></li>
+                <li>You should now see your newly created partition listed.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="proceed-with-windows-installation">Proceed with Windows Installation</h3>
+                <p>Now that you have created the partition, you can boot from the Windows installation USB and select this partition during the installation process.</p>
+                <ul>
+                <li>Follow the same steps as before, making sure to choose the correct partition for Windows installation.</li>
+                </ul>
+                <h3 id="if-you-encounter-the-no-device-drivers-were-found-error-again">If You Encounter the “No Device Drivers Were Found” Error Again</h3>
+                <ul>
+                <li><strong>Make Sure the USB Drive is Properly Created:</strong> If the error persists, ensure the USB is properly created and recognized by the BIOS.</li>
+                <li><strong>Use Different USB Ports:</strong> Use USB 2.0 ports if available, as they sometimes work better for booting.</li>
+                <li><strong>Disable Secure Boot:</strong> Make sure Secure Boot is disabled in BIOS settings.</li>
+                </ul>
+                <p>Let me know how it goes or if you need further help!</p>
+                <hr>
+                <p>It looks like you&#39;ve successfully created a new partition on <code>/dev/nvme0n1</code>, but it appears to have a <code>vfat</code> (FAT32) signature instead of the intended NTFS format. Here’s how to proceed from here to ensure you set up the partition correctly for Windows installation:</p>
+                <h3 id="remove-the-vfat-signature">Remove the vfat Signature</h3>
+                <p>Since the partition was created with a <code>vfat</code> signature, you’ll want to remove it. When prompted with:</p>
+                <pre><code><span class="hljs-keyword">Do</span> you want <span class="hljs-keyword">to</span> <span class="hljs-keyword">remove</span> the signature? [Y]es/[N]o:
+                </code></pre><ul>
+                <li>Type <strong>Y</strong> and press <strong>Enter</strong>. This will remove the existing FAT32 signature.</li>
+                </ul>
+                <h3 id="change-the-partition-type-to-ntfs">Change the Partition Type to NTFS</h3>
+                <ol>
+                <li><p><strong>Change the Partition Type:</strong>
+                After you remove the signature, you can change the partition type to NTFS:</p>
+                <ul>
+                <li>Enter the <code>t</code> command:<pre><code><span class="hljs-attribute">t</span>
+                </code></pre></li>
+                <li>When prompted for the partition number, enter <code>1</code>.</li>
+                <li>Then type <code>7</code> to set the type to NTFS:<pre><code><span class="hljs-number">7</span>
+                </code></pre></li>
+                </ul>
+                </li>
+                <li><p><strong>Write the Changes:</strong>
+                Finally, you’ll need to write the changes to the disk:</p>
+                <pre><code><span class="hljs-attribute">w</span>
+                </code></pre></li>
+                </ol>
+                <h3 id="format-the-partition-as-ntfs">Format the Partition as NTFS</h3>
+                <p>Now that the partition is created and set as NTFS, you should format it:</p>
+                <ol>
+                <li><strong>Format the Partition:</strong>
+                You can format the partition to NTFS directly from your Kali Linux environment using the <code>mkfs.ntfs</code> command. Run:<pre><code class="lang-bash">sudo mkfs<span class="hljs-selector-class">.ntfs</span> -f /dev/nvme0n1p1
+                </code></pre>
+                </li>
+                </ol>
+                <h3 id="verify-the-changes">Verify the Changes</h3>
+                <p>After formatting, verify that the partition is correctly formatted:</p>
+                <ol>
+                <li><p><strong>Re-open <code>fdisk</code>:</strong></p>
+                <pre><code class="lang-bash">sudo fdisk /dev/<span class="hljs-symbol">nvme0</span><span class="hljs-symbol">n1</span>
+                </code></pre>
+                </li>
+                <li><p><strong>Print the Partition Table:</strong></p>
+                <ul>
+                <li>Type:<pre><code><span class="hljs-attribute">p</span>
+                </code></pre></li>
+                <li>You should now see your partition as NTFS.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="proceed-with-windows-installation">Proceed with Windows Installation</h3>
+                <p>Now, you can reboot and boot from your Windows installation USB:</p>
+                <ol>
+                <li><strong>Select the Partition for Windows Installation:</strong>
+                During the installation process, select the NTFS partition you just created.</li>
+                </ol>
+                <h3 id="troubleshooting-the-no-device-drivers-were-found-error">Troubleshooting the “No Device Drivers Were Found” Error</h3>
+                <p>If you encounter the same error again during Windows installation:</p>
+                <ul>
+                <li><strong>Use USB 2.0 Ports:</strong> If available, use USB 2.0 ports for the installation USB.</li>
+                <li><strong>Create the USB on Windows:</strong> If possible, use a Windows machine to create the installation USB using the Media Creation Tool, as this tends to be more reliable than creating it on Linux or macOS.</li>
+                <li><strong>Disable Secure Boot:</strong> Make sure to disable Secure Boot in your BIOS settings, as it can sometimes interfere with installations.</li>
+                </ul>
+                <p>Let me know if you need any further assistance!</p>
+                <hr>
+                <p>It seems like you&#39;re in the process of setting up the partition correctly, but you haven&#39;t yet completed the necessary steps to configure it for Windows installation. Since you have removed the <code>vfat</code> signature but need to proceed further, here’s how to finish creating the partition:</p>
+                <h3 id="steps-to-configure-the-partition-for-windows">Steps to Configure the Partition for Windows</h3>
+                <ol>
+                <li><p><strong>Change the Partition Type to NTFS:</strong>
+                Now that you&#39;ve removed the <code>vfat</code> signature, you can set the partition type. Here&#39;s how:</p>
+                <ul>
+                <li>Type the command to change the partition type:<pre><code class="lang-bash"><span class="hljs-attribute">t</span>
+                </code></pre>
+                </li>
+                <li>When prompted for the partition number, enter <code>1</code> (or just press <strong>Enter</strong> if it&#39;s the only partition).</li>
+                <li>Set the type to NTFS by entering <code>7</code>:<pre><code class="lang-bash"><span class="hljs-number">7</span>
+                </code></pre>
+                </li>
+                </ul>
+                </li>
+                <li><p><strong>Write the Changes:</strong>
+                After changing the partition type, you need to write the changes to the disk:</p>
+                <pre><code class="lang-bash"><span class="hljs-attribute">w</span>
+                </code></pre>
+                <p>This will finalize your partition changes.</p>
+                </li>
+                <li><p><strong>Format the Partition as NTFS:</strong>
+                After you’ve created and set the partition type, format it to NTFS. Run:</p>
+                <pre><code class="lang-bash">sudo mkfs<span class="hljs-selector-class">.ntfs</span> -f /dev/nvme0n1p1
+                </code></pre>
+                <p>This command formats the newly created partition as NTFS, making it ready for the Windows installation.</p>
+                </li>
+                </ol>
+                <h3 id="verify-the-changes">Verify the Changes</h3>
+                <p>After formatting, verify that the partition is correctly set:</p>
+                <ol>
+                <li><p><strong>Re-open <code>fdisk</code>:</strong></p>
+                <pre><code class="lang-bash">sudo fdisk /dev/<span class="hljs-symbol">nvme0</span><span class="hljs-symbol">n1</span>
+                </code></pre>
+                </li>
+                <li><p><strong>Print the Partition Table:</strong></p>
+                <ul>
+                <li>Type:<pre><code class="lang-bash"><span class="hljs-attribute">p</span>
+                </code></pre>
+                </li>
+                <li>You should see your partition listed, and it should indicate that it is of type NTFS.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="proceed-with-windows-installation">Proceed with Windows Installation</h3>
+                <ol>
+                <li><p><strong>Reboot your Computer:</strong>
+                Ensure that the USB drive with the Windows installation media is plugged in.</p>
+                </li>
+                <li><p><strong>Boot from the USB:</strong>
+                Select the USB drive as the boot device during startup (you might need to enter BIOS/UEFI settings to adjust the boot order).</p>
+                </li>
+                <li><p><strong>Select the Partition for Installation:</strong>
+                During the Windows installation process, select the partition you just created (the NTFS partition) for installation.</p>
+                </li>
+                </ol>
+                <h3 id="troubleshooting-the-no-device-drivers-were-found-error">Troubleshooting the “No Device Drivers Were Found” Error</h3>
+                <p>If you still encounter the “No Device Drivers Were Found” error:</p>
+                <ul>
+                <li><strong>Use USB 2.0 Ports:</strong> If available, try using USB 2.0 ports for the installation USB.</li>
+                <li><strong>Ensure Proper USB Creation:</strong> Consider using a Windows machine to create the bootable USB using the Media Creation Tool, as this is usually the most reliable method.</li>
+                <li><strong>Disable Secure Boot:</strong> Ensure that Secure Boot is disabled in BIOS settings, as it can interfere with the installation process.</li>
+                </ul>
+                <p>Let me know if you need further assistance or if you encounter any issues!</p>
+                <hr>
+                <p>It looks like you&#39;re almost there with setting up the partition for Windows on your second drive. Let’s continue from where you are. You’ve successfully created the new partition but now need to set its type to NTFS and finalize everything. Here’s how to proceed:</p>
+                <h3 id="set-the-partition-type-to-ntfs">Set the Partition Type to NTFS</h3>
+                <ol>
+                <li><p><strong>Change the Partition Type:</strong>
+                After entering the <code>t</code> command, you’ll need to specify the hex code for NTFS. Here’s how:</p>
+                <ul>
+                <li>Type <code>7</code> (the code for NTFS) and press <strong>Enter</strong>:<pre><code><span class="hljs-number">7</span>
+                </code></pre></li>
+                </ul>
+                </li>
+                <li><p><strong>Write the Changes:</strong>
+                After setting the type, you need to write the changes to the disk:</p>
+                <ul>
+                <li>Type <code>w</code> and press <strong>Enter</strong>:<pre><code><span class="hljs-attribute">w</span>
+                </code></pre></li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="format-the-partition-as-ntfs">Format the Partition as NTFS</h3>
+                <p>After you&#39;ve created and set the partition type, you need to format it to NTFS. Run this command in your terminal:</p>
+                <pre><code class="lang-bash">sudo mkfs<span class="hljs-selector-class">.ntfs</span> -f /dev/nvme0n1p1
+                </code></pre>
+                <h3 id="verify-the-changes">Verify the Changes</h3>
+                <p>You can verify that the partition is correctly set by running <code>fdisk</code> again:</p>
+                <ol>
+                <li><p><strong>Re-open <code>fdisk</code>:</strong></p>
+                <pre><code class="lang-bash">sudo fdisk /dev/<span class="hljs-symbol">nvme0</span><span class="hljs-symbol">n1</span>
+                </code></pre>
+                </li>
+                <li><p><strong>Print the Partition Table:</strong></p>
+                <ul>
+                <li>Type:<pre><code class="lang-bash"><span class="hljs-attribute">p</span>
+                </code></pre>
+                </li>
+                <li>You should see your partition listed, and it should indicate that it is of type NTFS.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3 id="proceed-with-windows-installation">Proceed with Windows Installation</h3>
+                <ol>
+                <li><p><strong>Reboot your Computer:</strong>
+                Make sure that the USB drive with the Windows installation media is plugged in.</p>
+                </li>
+                <li><p><strong>Boot from the USB:</strong>
+                Select the USB drive as the boot device during startup (you might need to enter BIOS/UEFI settings to adjust the boot order).</p>
+                </li>
+                <li><p><strong>Select the Partition for Installation:</strong>
+                During the Windows installation process, select the partition you just created (the NTFS partition) for installation.</p>
+                </li>
+                </ol>
+                <h3 id="troubleshooting-the-no-device-drivers-were-found-error">Troubleshooting the “No Device Drivers Were Found” Error</h3>
+                <p>If you still encounter the “No Device Drivers Were Found” error:</p>
+                <ul>
+                <li><strong>Use USB 2.0 Ports:</strong> If available, try using USB 2.0 ports for the installation USB.</li>
+                <li><strong>Ensure Proper USB Creation:</strong> Consider using a Windows machine to create the bootable USB using the Media Creation Tool, as this is usually the most reliable method.</li>
+                <li><strong>Disable Secure Boot:</strong> Ensure that Secure Boot is disabled in BIOS settings, as it can interfere with the installation process.</li>
+                </ul>
+                <p>Let me know if you need further assistance or if you encounter any issues!</p>
+                <hr>
+                <p>Great! It looks like you&#39;ve successfully created and formatted the partition on your second drive as NTFS. Now, you&#39;re all set to proceed with the Windows installation. Here are the next steps:</p>
+                <h3 id="1-reboot-your-computer-">1. <strong>Reboot Your Computer</strong></h3>
+                <ul>
+                <li>Make sure your bootable Windows 11 USB drive is connected to the computer.</li>
+                </ul>
+                <h3 id="2-enter-bios-uefi-settings-">2. <strong>Enter BIOS/UEFI Settings</strong></h3>
+                <ul>
+                <li>When you power on your PC, press the key to enter BIOS/UEFI settings (usually <strong>F2</strong>, <strong>F10</strong>, <strong>F12</strong>, or <strong>Esc</strong> depending on your computer model).</li>
+                </ul>
+                <h3 id="3-set-boot-order-">3. <strong>Set Boot Order</strong></h3>
+                <ul>
+                <li>In the BIOS/UEFI menu, navigate to the boot options and ensure that the USB drive is set as the first boot device.</li>
+                <li>Save the changes and exit BIOS.</li>
+                </ul>
+                <h3 id="4-start-windows-installation-">4. <strong>Start Windows Installation</strong></h3>
+                <ul>
+                <li>Your computer should now boot from the USB drive.</li>
+                <li>Follow the prompts to start the Windows installation process.</li>
+                </ul>
+                <h3 id="5-select-installation-type-">5. <strong>Select Installation Type</strong></h3>
+                <ul>
+                <li>When you reach the installation type screen, choose <strong>Custom: Install Windows only (advanced)</strong>.</li>
+                </ul>
+                <h3 id="6-select-the-ntfs-partition-">6. <strong>Select the NTFS Partition</strong></h3>
+                <ul>
+                <li>You should see the partition you created on <code>/dev/nvme0n1</code> listed (it will show the size and indicate that it&#39;s NTFS).</li>
+                <li>Select this partition for the Windows installation.</li>
+                </ul>
+                <h3 id="7-continue-with-the-installation-">7. <strong>Continue with the Installation</strong></h3>
+                <ul>
+                <li>Follow the remaining prompts to complete the installation.</li>
+                </ul>
+                <h3 id="troubleshooting-no-device-drivers-were-found-">Troubleshooting “No Device Drivers Were Found”</h3>
+                <p>If you still encounter the “No device drivers were found” error:</p>
+                <ol>
+                <li><strong>Try a Different USB Port</strong>: If you&#39;re using a USB 3.0 port, switch to a USB 2.0 port.</li>
+                <li><strong>Check USB Format</strong>: Make sure the USB drive is formatted correctly as FAT32 or NTFS (it should be FAT32 for the installation media created with the Media Creation Tool).</li>
+                <li><strong>Disable Secure Boot</strong>: If it&#39;s not already done, disable Secure Boot in the BIOS settings.</li>
+                </ol>
+                <p>Once the installation is complete, you&#39;ll be able to boot into Windows from the newly created NTFS partition. Let me know if you need any further help or if something doesn&#39;t go as planned!</p>
+                
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
